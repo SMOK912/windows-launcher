@@ -83,7 +83,6 @@
     </Style>
   </Window.Resources>
   <Grid Background="#1e1e1e" Margin="0">
-    <!-- Custom Title Bar -->
     <Border Background="#222" Height="32" VerticalAlignment="Top">
       <DockPanel LastChildFill="True">
         <TextBlock Text="App Launcher" Foreground="White" VerticalAlignment="Center"
@@ -97,7 +96,6 @@
       </DockPanel>
     </Border>
 
-    <!-- Main Content -->
     <Grid Margin="10,42,10,10">
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
@@ -108,14 +106,12 @@
         <ColumnDefinition Width="*" />
       </Grid.ColumnDefinitions>
 
-      <!-- Search Label and Box -->
       <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center"
         Margin="0 0 0 5">
         <Label Content="Search:" VerticalAlignment="Center" />
         <TextBox x:Name="SearchBox" Width="120" Margin="5,0,0,0" />
       </StackPanel>
 
-      <!-- Category List -->
       <ListBox x:Name="CategoryList" Grid.Column="0" Grid.Row="1" Margin="0,5,10,0">
         <ListBox.ItemTemplate>
           <DataTemplate>
@@ -131,7 +127,6 @@
         </ListBox.ItemTemplate>
       </ListBox>
 
-      <!-- App List -->
       <ListBox x:Name="AppList" Grid.Column="1" Grid.Row="1" Margin="0,5,0,0">
         <ListBox.ItemTemplate>
           <DataTemplate>
@@ -142,7 +137,6 @@
                 </Image.Source>
               </Image>
               <TextBlock Text="{Binding name}" VerticalAlignment="Center" />
-              <!-- Show description next to name -->
               <TextBlock Text="{Binding description}" Foreground="#aaa" Margin="10,0,0,0"
                 VerticalAlignment="Center" FontStyle="Italic" />
             </StackPanel>
