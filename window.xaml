@@ -142,6 +142,9 @@
                 </Image.Source>
               </Image>
               <TextBlock Text="{Binding name}" VerticalAlignment="Center" />
+              <!-- Show description next to name -->
+              <TextBlock Text="{Binding description}" Foreground="#aaa" Margin="10,0,0,0"
+                VerticalAlignment="Center" FontStyle="Italic" />
             </StackPanel>
           </DataTemplate>
         </ListBox.ItemTemplate>
