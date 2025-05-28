@@ -89,5 +89,22 @@ $appList.Add_MouseDoubleClick({
     }
   })
 
+# Find custom title bar and buttons
+$closeBtn = $window.FindName('CloseButton')
+$minBtn = $window.FindName('MinimizeButton')
+
+# Wire up close and minimize button events
+$closeBtn.Add_Click({ $window.Close() })
+$minBtn.Add_Click({ $window.WindowState = 'Minimized' })
+
+# Enable dragging the window by the custom title bar (the Border)
+$titleBar = $window.Content.Children[0] # The Border is the first child of the root Grid
+$titleBar.Add_MouseLeftButtonDown({
+    param($s, $e)
+    if ($e.ButtonState -eq 'Pressed') {
+        $window.DragMove()
+    }
+})
+
 # Show window
 $window.ShowDialog() | Out-Null
