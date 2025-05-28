@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "name": "Utilities",
+      "icon": ".\\icons\\notepad.ico",
+      "apps": [
+        {
+          "name": "Notepad",
+          "path": "C:\\Windows\\notepad.exe",
+          "icon": ".\\icons\\notepad.ico"
+        },
+        {
+          "name": "Calculator",
+          "path": "C:\\Windows\\System32\\calc.exe",
+          "icon": ".\\icons\\notepad.ico"
+        }
+      ]
+    },
+    {
+      "name": "Terminal",
+      "icon": ".\\icons\\terminal.ico",
+      "apps": [
+        {
+          "name": "Windows Terminal",
+          "path": "C:\\Users\\Caden\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+          "icon": ".\\icons\\terminal.ico"
+        }
+      ]
+    }
+  ]
+}
