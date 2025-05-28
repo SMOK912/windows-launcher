@@ -13,7 +13,7 @@
         {
           "name": "Calculator",
           "path": "C:\\Windows\\System32\\calc.exe",
-          "icon": ".\\icons\\notepad.ico",
+          "icon": ".\\icons\\calculator.ico",
           "description": "Performs basic calculations"
         }
       ]
@@ -25,7 +25,7 @@
         {
           "name": "Windows Terminal",
           "path": "C:\\Users\\Caden\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
-          "icon": ".\\icons\\terminal.ico",
+          "icon": ".\\icons\\windows-terminal.ico",
           "description": "Modern terminal for Windows"
         }
       ]
