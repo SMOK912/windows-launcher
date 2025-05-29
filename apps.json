@@ -6,13 +6,13 @@
       "apps": [
         {
           "name": "Notepad",
-          "path": "C:\\Windows\\notepad.exe",
+          "command": "C:\\Windows\\notepad.exe",
           "icon": ".\\icons\\default\\general\\notepad.ico",
           "description": "Simple text editor"
         },
         {
           "name": "Calculator",
-          "path": "C:\\Windows\\System32\\calc.exe",
+          "command": "C:\\Windows\\System32\\calc.exe",
           "icon": ".\\icons\\default\\general\\calculator.ico",
           "description": "Performs basic calculations"
         }
@@ -24,7 +24,7 @@
       "apps": [
         {
           "name": "Windows Terminal",
-          "path": "C:\\Users\\Caden\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+          "command": "C:\\Users\\Caden\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
           "icon": ".\\icons\\default\\programs\\windows-terminal.ico",
           "description": "Modern terminal for Windows"
         }

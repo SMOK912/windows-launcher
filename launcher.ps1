@@ -17,18 +17,22 @@ foreach ($category in $data.categories) {
   $catIconPath = Resolve-Path -LiteralPath $category.icon -ErrorAction SilentlyContinue
   if ($catIconPath) {
     $category.icon = $catIconPath.ProviderPath
-  } elseif (Test-Path $defaultIcon) {
+  }
+  elseif (Test-Path $defaultIcon) {
     $category.icon = $defaultIcon
-  } else {
+  }
+  else {
     $category.icon = $null
   }
   foreach ($app in $category.apps) {
     $iconPath = Resolve-Path -LiteralPath $app.icon -ErrorAction SilentlyContinue
     if ($iconPath) {
       $app.icon = $iconPath.ProviderPath
-    } elseif (Test-Path $defaultIcon) {
+    }
+    elseif (Test-Path $defaultIcon) {
       $app.icon = $defaultIcon
-    } else {
+    }
+    else {
       $app.icon = $null
     }
   }
@@ -75,7 +79,7 @@ $searchBox.Add_TextChanged({
 $appList.Add_MouseDoubleClick({
     $selectedApp = $appList.SelectedItem
     if ($null -ne $selectedApp) {
-      Start-Process $selectedApp.path
+      Start-Process powershell -ArgumentList "-NoProfile", "-Command", $selectedApp.command
     }
   })
 
@@ -89,8 +93,8 @@ $titleBar = $window.Content.Children[0]
 $titleBar.Add_MouseLeftButtonDown({
     param($s, $e)
     if ($e.ButtonState -eq 'Pressed') {
-        $window.DragMove()
+      $window.DragMove()
     }
-})
+  })
 
 $window.ShowDialog() | Out-Null
