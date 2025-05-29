@@ -1,1 +1,1 @@
-ps2exe .\launcher.ps1 .\Launcher.exe -icon launcher.ico
+ps2exe .\launcher.ps1 .\Launcher.exe -icon launcher.ico -noConsole
