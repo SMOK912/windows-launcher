@@ -2,3 +2,5 @@ Launcher.exe
 windows-launcher_v*.zip
 
 .venv
+build/
+dist/
