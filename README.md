@@ -1,5 +1,7 @@
 # Windows Launcher
 
+**_ENTRY POINT IS `launcher.ps1`_**
+
 I wanted a tool to use for this purpose, and I made it. I put it here for anyone else who may need/want it :3
 
 ## Theming and Customization
