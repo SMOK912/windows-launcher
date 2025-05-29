@@ -1,0 +1,1 @@
+pyinstaller --noconsole --onefile --add-data "apps.json;." --add-data "icons;icons" .\manager.py
